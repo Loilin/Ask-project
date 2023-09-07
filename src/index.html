@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <title>Podcast Questions</title>
+  </head>
+  <body>
+    <button class="mui-btn mui-btn--fab mui-btn--danger floating-btn" id="modal-btn">All</button>
+    <div id="sidebar">
+      <div class="mui--text-white mui--text-display1 mui--align-vertical">
+        Podcast Questions
+        <br>
+        <small class="author">by Loilin</small>
+    </div>
+    <div id="modal-content"></div>
+    </div>
+    <div id="content" class="mui-container-fluid">
+      <div class="mui-row">
+        <div class="mui-col-sm-10 mui-col-sm-offset-1">
+          <br>raised
+          <br>
+          <div class="mui--text-black-54 mui--text-body2">Ask a Question</div>
+          <div class="mui-divider"></div>
+          <br>
+          
+          <form class="mui-form" id="form">
+            <div class="mui-textfield mui-textfield--float-label">
+              <input type="text" id="question-input" required minlength="10" maxlength="256">
+              <label for="question-input">What do you want to ask:</label>
+            </div>
+            <button 
+            type="submit"
+            id="submit"
+            disabled
+            class="mui-btn mui-btn--raised mui-btn--primary"
+            
+            >
+            Ask a question
+        </button>
+          </form>
+
+          <br>
+          <br>
+          <div class="mui--text-black-54 mui--text-body2">Your Questions</div>
+          <div class="mui-divider"></div>
+          <br>
+
+
+
+          <div id="list"></div>
+          
+          
+        </div>
+      </div>
+    </div>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"8028d832c934c2a2","token":"c8bda678e8c641c3bc7781653b8a1835","version":"2023.8.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
